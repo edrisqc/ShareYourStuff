@@ -1,0 +1,26 @@
+<div class = "" [class.dark-theme]="n > 4">
+  <h1>Insights</h1>
+
+  <div class="test-container">
+    <p>The {{ n }} element of the Fibonacci sequence is {{ nfib }}.
+      <br>
+      Click <span (click)="nextFibonacci()">here</span> to find the next element.</p>
+  </div>
+
+  <div class="test-container">
+    <p>
+      You can input stuff here: <input type="text" [(ngModel)]="name">
+      <br>
+      And it will show up here: {{ name }}
+    </p>
+  </div>
+
+  <ng-template [ngIf]="n > 10" [ngIfElse]="none">
+    <div class="test-container">
+      <h3>You sure click a lot!</h3>
+    </div>
+  </ng-template>
+
+  <ng-template #none>
+  </ng-template>
+</div>

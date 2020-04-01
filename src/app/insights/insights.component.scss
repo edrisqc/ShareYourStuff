@@ -1,0 +1,29 @@
+
+span {
+  font-weight: bold;
+  background: lightgray;
+  padding: .05em .2em;
+  cursor: pointer;
+  user-select: none;
+}
+
+.test-container {
+  padding: 1em;
+  border: 1px solid lightgray;
+  margin-bottom: 1em;
+
+  input {
+      padding: 1em;
+      margin-bottom: 2em;
+  }
+}
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: rgb(48, 48, 48);
+  color: white
+}

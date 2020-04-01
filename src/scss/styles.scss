@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,700&display=swap');
+@import "_stylevars";
+
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', 'sans-serif';
+    font-size: 18px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: $background;
+    padding: 1em 0;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+    a.logo {
+        font-weight: bold;
+    }
+
+    nav {
+        float: right;
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            display: flex;
+
+            li a {
+                padding: 1em;
+
+                &:hover {
+                    background: lighten($background, 10%);
+                }
+            }
+        }
+    }
+}
+
+h1 {
+    margin-top: 2em;
+}
+
+
